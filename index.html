@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="login-box">
+    <div class="lbox">
       <h2>Is your Birthday Lucky?</h2>
       <form>
-        <div class="user-box">
-          <input type="date" name="birthday" id="birthdate" required="" />
+        <div class="ubox">
+          <input type="date" name="birthday" id="birthdate" required="true" />
         </div>
-        <div class="user-box">
+        <div class="ubox">
           <input
             type="input"
             name="lnumber"
             id="number"
-            required=""
+            required="true"
             placeholder="enter you lucky number"
           />
         </div>
-        <div class="user-box" id="hidden" style="color: white;"></div>
-        <a href="#" id="btn" onclick="myfn()">
+        <div class="ubox" id="hidden" style="color: white;"></div>
+        <button href="#" id="btn" type="button" onclick="myfn()" disabled>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Check
-        </a>
+        </button>
       </form>
     </div>
     <script type="text/javascript" src="script.js"></script>
