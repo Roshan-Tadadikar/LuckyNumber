@@ -1,9 +1,17 @@
 //const date = document.getElementById("birthdate").value;
 var cont = document.getElementById("hidden");
-var btn = document.querySelector("#btn");
+var btn = document.getElementById("btn");
 const number = document.querySelector("#number");
 
 // btn.addEventListener("click", myfn());
+number.addEventListener("keyup", (e) => {
+  const val = e.currentTarget.value;
+  if (val === "") {
+    btn.disabled = true;
+  } else {
+    btn.disabled = false;
+  }
+});
 
 function myfn() {
   var x = document.getElementById("birthdate").value;
