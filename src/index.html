@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="lbox">
+      <h2>Is your Birthday Lucky?</h2>
+      <form>
+        <div class="ubox">
+          <input type="date" name="birthday" id="birthdate" required="true" />
+        </div>
+        <div class="ubox">
+          <input
+            type="number"
+            name="lnumber"
+            id="number"
+            required="true"
+            placeholder="enter you lucky number"
+          />
+        </div>
+        <div class="ubox" id="hidden" style="color: white;"></div>
+        <button href="#" id="btn" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Check
+        </button>
+      </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
